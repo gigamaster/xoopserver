@@ -1,10 +1,16 @@
 # XOOPServer
 
-![XOOPServer 5](xoopserver5.jpg)
+**Branchs**
+
+- XOOPServer5
+- XOOPServer5-source
+- XOOPServer7
 
 ## Introduction
 
 Design a web application, and a web site, requires you to take the jump from client-side technologies like HTML/CSS/Javascript, to server-side technologies like PHP. In order to successfully develop in this language, you need the ability to test your work before you launch it into the public domain of the Internet. You have to set up your own web server on your local PC, using freely downloadable software. The combination to work with Apache, MySQL and PHP allows development and testing on a local machine without the concerns of a consistent Internet connection.
+
+![XOOPServer 5](xoopserver5.jpg)
 
 ## About XOOPServer
 
@@ -17,7 +23,7 @@ Design a web application, and a web site, requires you to take the jump from cli
 - phpMyAdmin - 2.11.0
 - PHP/5.2.5
 
-### Environment and PHP Variables
+## Environment and PHP Variables
 
 - Server Name : localhost
 - Server Adrr : 127.0.0.1
@@ -36,10 +42,11 @@ Design a web application, and a web site, requires you to take the jump from cli
 
 :warning: **On Windows request: Allow Apache and MySQL**
 
-### :memo: Note
-:information_source: A portable application does not leave its files or settings on the host computer or modify the existing system and its configuration.  
-The server requires port 80.  
-If you have troubles, check if Skype, Firewall or an antivirus is not prevent server execution.
+## Note
+
+:memo: A portable application does not leave its files or settings on the host computer or modify the existing system and its configuration.  
+:information_source: The server requires port 80.  
+:warning: If you have troubles, check if Skype, Firewall or an antivirus is not prevent server execution.
 
 
 ## Credits
