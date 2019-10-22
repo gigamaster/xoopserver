@@ -1,0 +1,4 @@
+
+php_flag register_globals off
+php_flag magic_quotes_gpc on
+php_value upload_max_filesize 20M
