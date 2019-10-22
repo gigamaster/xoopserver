@@ -23,7 +23,7 @@ Design a web application, and a web site, requires you to take the jump from cli
 - phpMyAdmin - 2.11.0
 - PHP/5.2.5
 
-### Environment and PHP Variables
+## Environment and PHP Variables
 
 - Server Name : localhost
 - Server Adrr : 127.0.0.1
@@ -42,11 +42,11 @@ Design a web application, and a web site, requires you to take the jump from cli
 
 :warning: **On Windows request: Allow Apache and MySQL**
 
-### :memo: Note
+## Note
 
-:information_source: A portable application does not leave its files or settings on the host computer or modify the existing system and its configuration.  
-The server requires port 80.  
-If you have troubles, check if Skype, Firewall or an antivirus is not prevent server execution.
+:memo: A portable application does not leave its files or settings on the host computer or modify the existing system and its configuration.  
+:information_source: The server requires port 80.  
+:warning: If you have troubles, check if Skype, Firewall or an antivirus is not prevent server execution.
 
 
 ## Credits
