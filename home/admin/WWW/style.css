@@ -1,0 +1,734 @@
+/*  
+
+	XOOPS Cube Legacy 
+    http://xoopscube.org  */
+
+
+
+/*------------------------------------------------------- BODY LAYOUT */
+
+
+* {	margin: 0; padding: 0;}
+
+body 
+	{
+	background: #fff url(images/bg_page.jpg) top left repeat-x;
+	color: #323D56;
+	font-size: 13px;
+	font-family:Trebuchet MS, Helvetia, Tahoma, Verdana, Arial, sans-serif;
+	}
+
+#layout 
+	{
+	width: 970px;
+	margin: 0px auto;
+	text-align: left;
+	}
+
+/*------------------------------------------------------- HEADER */
+
+#header
+	{
+	width: 100%;
+	height:110px;
+	}
+
+#header h1 
+	{
+	margin: 0;
+	padding: 10px 0;
+	}
+
+.headerlogo 
+	{
+	float: left;
+	width: 200px;
+	height: 100px;
+	padding-top: 10px;
+	color:#fff;
+	}
+
+.headersearch 
+	{
+	float:right;
+	height:44px;
+	width:370px;
+	margin: 25px 0px 0px 0px;
+	background:url(images/bg_form_header.gif) no-repeat;
+	text-align:center;
+	}
+
+.headersearch form 
+	{
+	padding:10px 10px 0px 10px;
+	font-size:1.1em;
+	margin: 0px;
+	}
+.headerSearchField 
+	{	
+	width:230px;
+	background:url(images/bg_blockcontent.gif) top left repeat-x; 
+	border:1px inset #000066;
+	line-height:1.3em;
+	font-size:1.1em;
+	}
+
+.headersearch button 
+	{
+	padding-left:15px;
+	margin-left:5px;
+	border: none;
+	background:transparent url(images/buton_search.gif) no-repeat;
+	color:#FFCC00;
+	}
+
+.sitename 
+	{
+	float:left;
+	margin:65px 0px 0px 0px;
+	font-size:22px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	}
+
+.headerbar 
+	{
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	line-height:30px;
+	text-align: left;
+	}
+	
+/*------------------------------------------------------- CONTAINER */
+
+
+#container 
+	{
+	padding:10px 0;
+	display:block;
+	}
+
+#side 
+	{
+	 float:right; 
+	 position:relative; 
+	 width: 245px;
+	 text-align:center;
+	}
+	
+.sidecolumn
+	{
+	width:240px;
+	padding:0px;
+	text-align:left;
+	}
+
+#main2columns 
+	{
+	width:680px;
+	float: left;
+	display:inline;
+	position: relative;
+	}  
+
+#content 
+	{
+	float:left;
+	margin:0px auto;
+	padding:0px;
+	width:690px;
+	}
+/*------------------------------------------------------- Navigation TABS */
+
+#navigation 
+	{ 
+	position:relative;
+	float:right;
+	top:-1.5em;
+	}
+
+#navigation a 
+	{
+	float: left;
+	display: block;
+	width:110px;
+	background:#E5E6FB url(images/bg_navtab.gif) left top repeat-x;
+	border-top:1px solid #fff;
+	border-right:1px solid #ccc;
+	border-left:1px solid #fff;
+	text-decoration: none;
+	text-align:center;
+	font-weight:bold;
+	}
+
+/* Hide from IE5-Mac \*/
+#navigation a 
+	{
+	float: none
+	}
+/* End hide */
+
+#navigation a:hover 
+	{
+	background:transparent url(images/bg_navtab.gif) left -33px repeat-x;
+	color: #FF9900;
+	}
+
+#navigation ul, #navigation li 
+	{
+	list-style: none;
+	padding: 0;
+	margin: 0
+	}
+
+#navigation li 
+	{
+	float: left;
+	margin: 0;
+	}
+	
+/*------------------------------------------------------- FLOAT */
+
+.floatRight 
+	{ 
+	float: right;
+	margin-left: 8px;
+	}
+
+.floatLeft 
+	{ 
+	float: left;
+	margin-right: 8px;
+	}
+.floatClear 
+	{ 
+	clear:both;
+    height:0;    
+	line-height: 0px;
+    font-size: 1px;
+	}
+
+
+
+/*  
+
+	XOOPS Cube Legacy 
+    http://xoopscube.org  */
+
+/*------------------------------------------------------- COMMON */
+
+a, a:visited  
+	{
+	color:#4D63BB;
+	}
+
+a:hover, a:active
+	{
+	color:#EA8C00;
+	}
+
+area, base, basefont, head, meta, script, style, title,
+noembed, noscript, param 
+	{
+   display: none;
+	}
+
+h1, h2, h3, h4, h5 
+	{
+	margin:8px 0px;	
+	}
+
+img 
+	{
+	border:0;
+	}
+
+table 
+	{
+	width: 100%;
+	}
+
+td 
+	{
+	margin : 0;
+	padding: 0;
+	vertical-align: top;
+	border: 0;
+	}
+
+th 
+	{ 
+	padding: 4px;
+	vertical-align: middle;
+	font-weight:bold;
+	}
+
+p 
+	{
+	padding: 4px;
+	line-height: 140%;
+	}
+	
+pre { line-height:2.5em}
+
+/* check this */
+#container a, #container a:visited  
+	{
+	color:#4D63BB;
+	}
+
+#container a:hover, #container a:active
+	{
+	color:#F9B743;
+	}
+
+
+
+ul 
+	{
+	margin: 2px 2px 2px 15px;
+	padding: 2px;
+	text-align: left;
+	list-style: square outside;
+	}
+
+img 
+	{
+	border:0;
+	}
+	
+
+/* ====================================================== common ===== */
+
+table {
+	margin:0;
+	padding:0;
+	width:100%;
+	border-collapse:collapse; 
+}
+td {
+	vertical-align:top;
+}
+
+th {
+	text-align:center;
+	padding:5px 1px;
+	background:#eee url(images/bg_blocktitle.gif) top left repeat-x;
+}
+
+th a {
+	font-weight:bold;
+}
+th a:visited {
+	font-weight:bold;
+}
+th a:hover {
+	font-weight:bold;
+	color:#ff8c00;
+}
+
+.outer td , .outer th {
+	border:1px solid #ccc;
+}
+
+
+table.outer {
+	margin:10px 0;
+	border:1px solid #ddd;
+}
+
+.head {
+	background:#dddddd;
+	padding:5px 3px;
+}
+.foot {
+	padding:6px 4px;
+	text-align: center;
+	background:url(images/bg_footer.gif) top left repeat-x;
+}
+
+.odd, .row0 {
+	background:#eeeeff;
+	padding:5px 3px;
+}
+.even, .row1 {
+	background:#ffffff;
+	padding:5px 3px;
+}
+tr .odd td {
+	padding:3px;
+	vertical-align:middle;
+}
+tr .even td {
+	padding:3px;
+	vertical-align:middle;
+}
+.nw {
+	white-space:nowrap;
+}
+
+/* ====================================================== header ===== */
+
+
+/*------------------------------------------------------- FORM */
+
+/* Required for cross-browser, the :hover(IE) is not supported! */
+
+input,select,textarea,checkbox,radio 
+{
+margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-width: 0px;
+margin-height: 0px;
+padding:2px;
+scrollbar-face-color:#FFFFCC;
+scrollbar-arrow-color:#69c;
+scrollbar-base-color:#fff;
+scrollbar-track-color:#FFFFEE;
+scrollbar-3dlight-color:#ccc;
+scrollbar-darkshadow-color:#999;
+scrollbar-shadow-color:#fff;
+scrollbar-highlight-color:#fff;
+font-family: verdana, Arial;
+color: #344587;
+font-size: 12px;
+background-color: #f4f4f4;
+border: 1px solid #ccc;
+}
+
+/* Windows IExplorer only */
+/* Placed within conditional comments on theme.html*/
+/* http://www.quirksmode.org/css/condcom.html */
+
+input
+{
+border-width: expression(this.type=="submit" ?'1px':'');
+border-style: expression(this.type=="submit" ?'outset':''); <br>
+border-color: expression(this.type=="submit" ?'#ccc #666 #666 #ccc':'');
+font-family: expression(this.type=="submit" ?'Trebuchet ms, verdana arial':'');
+font-size: expression(this.type=="submit" ?'11px':'');
+font-weight: expression(this.type=="submit" ?'bold':'');
+color: expression(this.type=="submit" ?'#fff':'');
+background-color: expression(this.type=="submit" ?'#E4E4FF':'');
+cursor: expression(this.type=="submit" ?'hand':'');
+}
+
+input 
+{
+visibility: expression(this.type=="hidden" ?'hidden':'');
+height: expression(this.type=="hidden" ?'1px':'');
+}
+
+
+/* NN, FF, MOZ/WIN only*/
+
+input[type="button"], input[type="reset"] , input[type="submit"] 
+{ 
+margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-width: 0px;
+margin-height: 0px;
+font-family: verdana, Arial;
+color: #344587;
+font-size: 11px;
+font-weight: bold;
+background-color: #E4E4FF;
+border-top: 1px outset #ccc;
+border-right: 1px outset #666;
+border-bottom: 1px outset #666;
+border-left: 1px outset #ccc;
+cursor: pointer;
+cursor: hand;
+}
+
+/* NN, FF, MOZ/WIN only*/
+
+input[type="button"]:hover, input[type="reset"]:hover , input[type="submit"]:hover 
+{ 
+font-family: verdana, Arial;
+color: #000;
+font-size: 11px;
+font-weight: bold;
+background-color: #afafaf;
+border-top: 1px inset #ccc;
+border-right: 1px inset #666;
+border-bottom: 1px inset #666;
+border-left: 1px inset #ccc;
+cursor: pointer;
+cursor: hand;
+
+}
+
+input[type="hidden"]
+{
+visibility:hidden;
+font-size:1px;
+height:1px;line-height: 1px;
+float:none;
+}
+
+/*------------------------------------------------------- SIDE PROJECT LINKS */	
+/*------------------------------------------------------- COMMUNITY LINK */
+
+ul#communityLink, 
+ul#projectLinks 
+	{
+	margin:1em; 
+	padding: 0px; 
+	list-style-type:none;
+	}
+
+ul#communityLink li, 
+ul#projectLinks li 
+	{
+	margin:0;
+	padding:3px;
+	}
+
+ul#communityLink li a, ul#communityLink li a:visited,
+ul#projectLinks li a, ul#projectLinks li a:visited
+	{ 
+	display: block;
+	margin:0;
+	padding:0px;	
+	color:#4D71B9;
+	border-bottom:#F5F5FF 1px solid;
+	font-size:13px;
+	text-decoration:none;
+	}
+
+ul#projectLinks li a.Project {padding-left:30px; background:url(images/project.png) center left no-repeat;}
+ul#projectLinks li a.Download {padding-left:30px; background:url(images/package.png) center left no-repeat;}
+ul#projectLinks li a.Hoda {padding-left:30px; background:url(images/hoda.png) center left no-repeat;}
+ul#projectLinks li a.Modules {padding-left:30px; background:url(images/modules.png) center left no-repeat;}
+ul#projectLinks li a.Doc {padding-left:30px; background:url(images/doc.png) center left no-repeat;}
+ul#projectLinks li a.Forum {padding-left:30px; background:url(images/news.png) center left no-repeat;}
+ul#projectLinks li a.Tracker {padding-left:30px; background:url(images/tracker.png) center left no-repeat;}
+
+ul#communityLink li a.brasil {padding-left:30px; background:url(images/flag_brasil.png) center left no-repeat;}
+ul#communityLink li a.french {padding-left:30px; background:url(images/flag_french.png) center left no-repeat;}
+ul#communityLink li a.german {padding-left:30px; background:url(images/flag_german.png) center left no-repeat;}
+ul#communityLink li a.greece {padding-left:30px; background:url(images/flag_greece.png) center left no-repeat;}
+ul#communityLink li a.japan {padding-left:30px; background:url(images/flag_japan.png) center left no-repeat;}
+ul#communityLink li a.korean {padding-left:30px; background:url(images/flag_korean.png) center left no-repeat;}
+ul#communityLink li a.russian {padding-left:30px; background:url(images/flag_russian.png) center left no-repeat;}
+ul#communityLink li a.taiwan {padding-left:30px; background:url(images/flag_taiwan.png) center left no-repeat;}
+
+ul#communityLink li a:hover,
+ul#projectLinks li a:hover 
+	{
+	border-bottom:#fff 1px solid;
+	color:#FF9900;
+	}
+	
+	
+/*------------------------------------------------------- SIDE BLOCKS */
+
+
+.leftblock, .rightblock 
+	{
+	margin:0px 0px 20px 0px;
+	}
+	
+.leftblockTitle, .rightblockTitle 
+	{
+	color: #344587;
+	font-size: 1.3em;
+	margin: 0;
+	padding: 5px 0px 5px 15px;
+	border-bottom:1px solid #E2E2FC;
+	background:url(images/bg_blocktitle.gif) repeat-x;
+	}
+	
+.leftblockContent, .rightblockContent
+	{
+	margin: 0;
+	padding: 5px 0px 5px 15px;
+	line-height: 1.5em;
+	border:1px solid #E4E4FF;
+	background:url(images/bg_blockcontent.gif) top left repeat-x;
+	}
+
+/*------------------------------------------------------- CENTER CENTER BLOCKS */
+
+.centerCcolumn 
+	{
+/*	float:left;
+	width:680px;*/
+	padding:10px 0px;
+	}
+.centerCblockTitle
+	{
+	color: #344587;
+	font-size: 1.3em;
+	margin: 0;
+	padding: 4px 0px;
+	}
+ .centerCblockContent
+	{
+	padding-top:15px;
+	margin-bottom:15px;
+	}
+	
+/*------------------------------------------------------- CENTER BOTTOM BLOCKS */
+
+
+#centerBlocksContainer 
+	{
+	width:970px;
+	padding-top:50px;
+	background:url(images/bg_centerblockcontainer.gif) 0px 0px repeat-x;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	}
+	
+.centerLcolumn
+	{
+	float: left;
+	width: 49%;
+	padding:0px;
+	}
+	
+.centerRcolumn
+	{
+	float: right;
+	width: 49%;
+	padding:0px;
+	}
+
+.centerLblockTitle, 
+.centerRblockTitle 
+	{
+	margin: 0;
+	padding: 0px 0px 5px 40px;
+	color: #A8C6FD;
+	font-size: 1.3em;
+	line-height:2em;
+	}
+
+	.centerLblockTitle 
+	{
+	background:url(images/bg_cltitle.png) center left no-repeat;
+	}
+	
+	.centerRblockTitle 
+	{
+	background:url(images/bg_crtitle.png) center left no-repeat;
+	}
+	
+.centerLblockContent, 
+.centerRblockContent  
+	{
+	margin: 0;
+	padding: 30px 10px;
+	line-height: 1.5em;
+	border-top:2px solid #071B90;
+	color:#9BCDFF;
+	}
+	
+	.centerLblockContent a, .centerLblockContent a:visited,
+	.centerRblockContent a, .centerRblockContent a:visited
+	{
+	color: #387CFA;
+	}
+
+	.centerLblockContent a:hover,
+	.centerRblockContent a:hover
+	{
+	color:#FF9900;
+	}
+	
+/*------------------------------------------------------- FOOTER CREDITS */
+
+#centerBlocks 
+	{
+	clear:both;
+	margin:0;
+	padding:0px;
+	background:#070A71 url(images/bg_cb.jpg) top left repeat-x;
+	border-bottom:1px solid #fff;
+	}
+
+#footerbar 
+	{
+	clear:both;
+	margin: 0;
+	padding: 8px 200px;
+	border-bottom:1px solid #E2E2FC;
+	background:#FBFBFF url(images/bg_footer.gif) top left repeat-x;
+	color: #344587;
+	line-height:2em;
+	font-weight:bold;
+	font-size:0.9em;
+	text-align: center;
+	}
+
+#footerbar span 
+	{ 
+	float:right;
+	}
+	
+/*------------------------------------------------------- SYSTEM MESSAGES */
+
+.resultMsg {
+	color:#000000;
+	font-size:15px;
+	border:1px solid #6B94C5;
+	padding:8px 8px 8px 35px;
+	margin:15px 10px;
+	background:#EEEEFF url(images/info.png) no-repeat 5px 4px;
+}
+
+.warning {
+	color:#770000;
+	font-size:15px;
+	border:1px solid #cc0000;
+	padding:8px 8px 8px 35px;
+	margin:15px 10px;
+	background:#fff8ee url(images/error.png) no-repeat 5px 4px;
+}
+.confirm, .confirmMsg {
+	color:#000000;
+	border:1px solid #ff6633;
+	padding:8px 8px 8px 35px;
+	margin:15px 10px;
+	background:#fff8ee url(images/important.png) no-repeat 5px 4px;
+}
+.tips {
+	color:#000000;
+	border:1px solid #00cc00;
+	padding:8px 8px 8px 35px;
+	margin:15px 10px;
+	background:#f8fff8 url(images/idea.png) no-repeat 5px 4px;
+}
+.error, .errorMsg {
+	color:#000000;
+	border:2px dotted #ff6633;
+	padding:8px 8px 8px 35px;
+	margin:15px 10px;
+	background: #fff8ee url(images/error.png) no-repeat 5px 4px;
+}
+
+	
+/*------------------------------------------------------- FLOAt FIX */
+
+.clearfix:after {
+ content: "."; 
+ display: block; 
+height: 0; 
+ clear: both; 
+ visibility: hidden;
+ }
+ 
+.clearfix{display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}
+/* End hide from IE-mac */  

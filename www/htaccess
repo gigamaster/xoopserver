@@ -1,0 +1,183 @@
+############################################################################
+#   XOOPSERVER htaccess 20.08.2008                                         #
+#   based on corz FancyIndexing                                            #
+############################################################################
+
+Options +Indexes +MultiViews +FollowSymlinks
+
+# Directives controlling the display of server-generated directory listings.
+#    
+<IfModule mod_autoindex.c>
+
+	# FancyIndexing is whether you want fancy directory indexing or standard
+    IndexOptions FancyIndexing IconHeight=16 IconWidth=16  NameWidth=30 DescriptionWidth=30
+
+	# These are only displayed for FancyIndexed directories.
+	AddIcon /icons/small/exe.png .exe 
+	AddIcon /icons/small/binary.png .bin .exe .cgi
+	AddDescription "Windoze executable" .exe
+	AddDescription "server-side executable" .cgi
+
+	AddIcon /icons/small/binhex.png .hqx
+	AddDescription "Mac binhex archive" .hqx
+
+	AddIcon /icons/small/world2.png .wrl .wrl.gz .vrml .vrm .iv
+	AddDescription "some virtual world file" .wrl .wrl.gz .vrml .vrm .iv
+
+	AddIcon /icons/small/compressed.png .bz .bz2 .gz .ace .arj .tar.gz .tgz
+	AddIcon /icons/small/tar.png .tar
+	AddIcon /icons/small/zip.png .Z .z .zip
+	AddIcon /icons/small/rar.png .rar
+	AddIcon /icons/small/sit.png .sit .sitx
+	AddDescription "GZIP compressed tar archive" .tgz .tar.gz
+	AddDescription "tar (tape) archive" .tar
+	AddDescription "GZIP compressed document" .Z .z .gz .zip
+	AddDescription "ZIP compressed document" .zip 
+	AddDescription "highly compressed rar archive" .rar
+	AddDescription "highly compressed bzip archive" .bz2 .bz 
+	AddDescription "stuffit archive" .sit
+	AddDescription "stuffitX archive" .sitx
+	AddDescription "ace compressed archive" .ace
+	AddDescription "arj compressed archive" .arj
+
+	# image types
+	AddIcon /icons/small/gif.png .gif
+	AddDescription "legacy compuserve GIF image" .gif
+	AddIcon /icons/small/jpg.png .jpg .jpeg .png
+	AddDescription "jpeg compressed photo image" .jpg .jpeg
+	AddDescription "portable network graphic (yay!)" .png
+
+	AddIcon /icons/small/photo.png .ps .psd
+	AddDescription "Photoshop image" .ps .psd
+	AddIcon /icons/small/vector.png .ai .eps
+	AddDescription "vector (scalable) image" .ai .eps
+
+	AddIcon /icons/small/layout.png .dtd .xml .chm
+	AddIcon /icons/small/css.png .css
+	AddIcon /icons/small/html.png .html .shtml .htm
+
+	AddDescription "good old hypertext" .html .shtml .htm
+	AddDescription "css stylesheet" .css
+	AddDescription "DocType Definition" .dtd
+	AddDescription "extensible markup language" .xml
+	AddDescription "win32 compressed html help" .chm
+
+	AddIcon /icons/small/acrobat.png .pdf
+	AddDescription "adobe portable document" .pdf
+
+	AddIcon /icons/small/text.png .txt
+	AddDescription "nice plain text" .txt
+
+	AddIcon /icons/small/text.png .diz .nfo .faq .readme .me
+	AddDescription "plain text info" .diz .nfo .faq .readme .me
+	
+	AddIcon /icons/small/man.png .man
+	AddDescription "unix man page" .man
+	
+	AddIcon /icons/small/eml.png .eml .mbox
+	AddDescription "email data" .eml .mbox
+	
+	AddIcon /icons/small/word.png .doc
+	AddDescription "text type document" .doc
+	
+	AddIcon /icons/small/script.png .pl
+	AddDescription "pearl script" .pl
+	
+	AddIcon /icons/small/script_red.png .py
+	AddDescription "python script" .py
+
+	AddIcon /icons/small/php.png .php .php3 .php4 .phps
+	AddDescription "php script" .php  .php3 .php4
+	AddDescription "php source" .phps
+
+	AddIcon /icons/small/f.png .for .f
+	AddDescription "dunno what for" .for
+
+	AddIcon /icons/small/dvi.png .dvi
+	AddDescription "dvi file!" .dvi
+
+	AddIcon /icons/small/uu.gif .uu .uue
+	AddDescription "7-bit uu encoded (news) file" .uu .uue
+
+	AddIcon /icons/small/script.png .conf .sh .shar .csh .ksh .tcl .command .h .term
+	AddIcon /icons/small/js.png .js .java
+	AddDescription "javascript" .js
+	AddDescription "java code"  .java
+	AddDescription "unix shell script" .sh .shar .csh .ksh .command
+	AddDescription "OS X clickable shell script" .command
+	AddDescription "configuration file" .conf
+	AddDescription "Mac OS X terminal" .term
+
+	AddIcon /icons/small/tex.png .tex
+	AddDescription "smells like rubber" .tex
+
+	AddIcon /icons/small/bomb.png core .o
+	AddDescription "core stuff!" core .o
+
+	AddIcon /icons/small/c.png .c
+	AddDescription "code" .c
+	AddDescription "more code" .h
+	
+	AddDescription "BitTorrent file" .torrent
+	AddIcon /icons/small/torrent.png  .torrent
+
+	# some misc types
+	AddDescription "windows link. ewww!" .lnk .url
+	
+
+	AddIconByEncoding (CMP,/icons/small/compressed.png) x-compress x-gzip
+	AddIconByType (TXT,/icons/small/text.png) text/*
+	AddIconByType (IMG,/icons/small/image.png) image/*
+	AddIconByType (SND,/icons/small/sound2.png) audio/*
+	AddIconByType (VID,/icons/small/movie.png) video/*
+
+	AddIcon /icons/small/back.png ..
+	AddIcon /icons/small/hand.right.png README
+	AddIcon /icons/small/dir.png ^^DIRECTORY^^
+	AddIcon /icons/small/blank.png ^^BLANKICON^^
+
+	# the wtf section..
+	AddDescription "who knows?" .1 .2 .3 .4 .5 .6 .7 .8 .9
+	AddIcon /icons/small/num.png   .1 .2 .3 .4 .5 .6 .7 .8 .9
+
+	# here's a cool trick!
+	# won't work unless you cover every type you intend to serve
+	# sort of a catch-all..
+	AddDescription "hmm.. directory?" *
+	
+	# DefaultIcon is which icon to show for where none is explicitly set.
+	DefaultIcon /icons/small/generic.gif
+
+
+	# headers and footers
+
+	# If MultiViews are amongst the Options in effect, the server will
+	# first look for name.html and include it if found.  If name.html
+	# doesn't exist, the server will then look for name.txt and include
+	# it as plaintext if found.
+	#
+
+	#ReadmeName readme
+	#HeaderName header
+
+	# you can specify the full name, if you like..
+
+	#HeaderName header.html
+
+	# Single fixed location to cover *all* the subdirectories
+	# affected by this .htaccess
+
+	HeaderName /a/plugins/themeheader.html
+	ReadmeName /a/plugins/themefooter.html
+
+	#
+	# IndexIgnore is a set of filenames which directory indexing should ignore
+	# and not include in the listing.  Shell-style wildcarding is permitted.
+	#
+	IndexIgnore  .??* *~ *# readme.html header.html HEADER README RCS CVS SVN THUMBS.db *,v *,t .DS_Store *.log
+    
+</IfModule>
+# End of indexing directives.
+
+
+
