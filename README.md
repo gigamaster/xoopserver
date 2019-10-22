@@ -1,6 +1,6 @@
-# xoopserver
+# XOOPServer
 
-[XOOPServer 5](xoopserver5.jpg)
+![XOOPServer 5](xoopserver5.jpg)
 
 ## Introduction
 
@@ -8,47 +8,43 @@ Design a web application, and a web site, requires you to take the jump from cli
 
 ## About XOOPServer
 
-XOOPServer is a portable Windows Apache, MySQL, PHP and phpMyAdmin with required extensions to run and test locally XOOPS Cube Legacy Distributions (modular content management system).
+:computer: XOOPServer is a portable Windows Apache, MySQL, PHP and phpMyAdmin with required extensions to run and test locally XOOPS Cube Legacy Distributions (Web Application Platform and Modular Architecture Content Management System).
 
-[XOOPServer 5 Screenshot](xoopserver_screenshot.jpg)
+![XOOPServer 5 Screenshot](xoopserver_screenshot.jpg)
 
-Apache/2.0.59 (Win32)
+- Apache/2.0.59 (Win32)
+- MySQL 5.0.45
+- phpMyAdmin - 2.11.0
+- PHP/5.2.5
 
-MySQL 5.0.45
+### Environment and PHP Variables
 
-phpMyAdmin - 2.11.0
-
-PHP/5.2.5
-
-Environment and PHP Variables
-Server Name : localhost
-
-Server Adrr : 127.0.0.1
-
-Server Port : 80
-
-Document Root : W:/www
-
-Database User : root
-
-Database Pass :
-
-Gateway Interface : CGI/1.1
-
-Server Protocol: HTTP/1.1
+- Server Name : localhost
+- Server Adrr : 127.0.0.1
+- Server Port : 80
+- Document Root : W:/www
+- Database User : root
+- Database Pass :
+- Gateway Interface : CGI/1.1
+- Server Protocol: HTTP/1.1
 
 ## Installation
 
-Download XOOPServer archive Unzip to your drive Launch xoopserver.exe 
+- Download XOOPServer archive 
+- Unzip to your drive 
+- Launch xoopserver.exe 
 
-/!\ On Windows request: Allow Apache and MySQL
+:warning: **On Windows request: Allow Apache and MySQL**
 
-Note: There is no files installed nor changes to your system. The server requires port 80. If you have troubles, check if Skype, Firewall or an antivirus is not prevent server execution.
+### :memo: Note
+:information_source: A portable application does not leave its files or settings on the host computer or modify the existing system and its configuration.  
+The server requires port 80.  
+If you have troubles, check if Skype, Firewall or an antivirus is not prevent server execution.
 
 
 ## Credits
 
-Mikhail Miguel
+:bust_in_silhouette: Mikhail Miguel
 
 ### Backup Google Code Archive SVN
 
